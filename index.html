@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Demo: A Fullscreen Slideshow using Skrollr.js</title>
+    <meta name="description" content="Learn how to create a fullscreen slideshow for your scrolling website.">
+    <!--iOS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+</head>
+<body>
+
+    <!--[if lt IE 7]>
+        <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+    <![endif]-->
+
+	<!-- Demo content -->			
+	<div id="page-content">        
+        <div id="slides-container">
+            <div id="slides" 
+                 data-0="transform: translate(0%, 0%)"
+                 data-150p="transform: translate(0%, -50%)"
+                 data-200p=""
+                 data-300p="transform: translate(-50%, -50%)"
+                 data-350p=""
+                 data-450p="transform: translate(-50%, 0%)">
+                <div id="slide-1" class="slide">
+                    <div class="caption">
+                        <h1>Image 1 Title</h1>
+                        <p>Image description goes hire...</p>
+                    </div>
+                </div>
+                <div id="slide-2" class="slide">
+                    <div class="caption">
+                        <h1>Image 2 Title</h1>
+                        <p>Image description goes hire...</p>
+                    </div>
+                </div>
+                <div id="slide-3" class="slide">
+                    <div class="caption">
+                        <h1>Image 3 Title</h1>
+                        <p>Image description goes hire...</p>
+                    </div>
+                </div>
+                <div id="slide-4" class="slide">
+                    <div class="caption">
+                        <h1>Image 4 Title</h1>
+                        <p>Image description goes hire...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="helper">
+            <div class="marker red"></div>
+            <div class="marker blue"></div>
+            <div class="marker orange"></div>
+            <div class="marker green"></div>
+        </div>
+
+	</div>
+	<!-- /Demo content -->   
+    <script src="./js/skrollr.min.js"></script>
+    <script>
+        var s = skrollr.init();
+    </script>
+</body>
+</html>
